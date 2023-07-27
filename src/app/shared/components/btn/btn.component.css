@@ -1,0 +1,12 @@
+.btn {
+    display: flex;
+    min-width: 80px;
+    flex-flow: row nowrap;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 8px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}

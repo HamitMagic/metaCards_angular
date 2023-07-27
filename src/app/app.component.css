@@ -1,0 +1,8 @@
+:host {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 95vh;
+}
+.main {
+    flex: 1;
+}

@@ -1,0 +1,14 @@
+<div class="footer-container">
+    <div class="footer-btn">
+        <app-btn title="открыть" imgPath="./assets/svg/turn.svg" (click)="setIsOpen()"/>
+        <app-btn title="перемешать" (click)="shuffleArray()"/>
+        <app-btn title="показать нумерацию" (click)="setIsNumbersShown()"/>
+    </div>
+    <div class="footer-cards">
+        <div *ngFor="let card of cards; let i = index">
+            <span class="index" *ngIf="isNumbersShown">{{i+1}}</span>
+            <img class="card-item" *ngIf="isOpen" [src]="card" (click)="removeCard(card)" />
+            <img class="card-item" *ngIf="!isOpen" [src]="backOfCards" (click)="removeCard(card)" />
+        </div>
+    </div>
+</div>
