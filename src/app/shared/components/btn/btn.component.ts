@@ -8,4 +8,5 @@ import { Component, Input } from '@angular/core';
 export class BtnComponent {
   @Input() public title: string = '';
   @Input() public imgPath: string = '';
+  
 }

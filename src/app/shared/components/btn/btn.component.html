@@ -1,4 +1,4 @@
-<button class="btn">
+<button class="btn" [ngClass]="{'btn-no-content': !title}">
     <img *ngIf="imgPath" [src]="imgPath"/>
     <span *ngIf="title">{{title}}</span>
 </button>

@@ -1,12 +1,17 @@
 .btn {
     display: flex;
-    min-width: 80px;
+    /* max-width: 80px; */
     flex-flow: row nowrap;
     justify-content: center;
     border-radius: 10px;
     gap: 8px;
+
 }
 
 .btn:hover {
     cursor: pointer;
+}
+
+.btn-no-content {
+    padding: 1px;
 }

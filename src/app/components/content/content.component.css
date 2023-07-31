@@ -3,3 +3,44 @@
     width: 100%;
     position: relative;
 }
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    /* max-width: 100px; */
+    z-index: 1;
+}
+
+.card-item {
+    height: 150px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    cursor: move;
+    /* display: flex; */
+    /* flex-flow: row wrap; */
+}
+
+.btns #content-isOpen, .btns #content-close {
+    top: -6px;
+    position: absolute;
+    padding: 0;
+}
+
+.btn {
+    padding: 0;
+}
+
+#content-close {
+    right: -6px;
+}
+
+#content-isOpen {
+    left: -6px;
+}
+
+.selected {
+    border: 1px solid;
+    box-sizing: border-box;
+    transform: scale(1.1);
+}

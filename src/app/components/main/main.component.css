@@ -8,4 +8,7 @@
 #content {
     /* border: 1px solid; */
     flex: 1;
+    display: flex;
+    gap: 8px;
+    flex-flow: row wrap;
 }

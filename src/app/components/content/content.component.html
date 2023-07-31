@@ -1,6 +1,8 @@
-<div class="card-item" *ngFor="let card of cards">
-    <app-btn imgPath="./assets/svg/turn.svg" (click)="setIsOpen(card)" />
-    <img class="card-item" *ngIf="card.isOpen" [src]="card.path" />
-    <img class="card-item" *ngIf="!card.isOpen" [src]="card.backOfCard" />
-    <app-btn imgPath="./assets/svg/close.svg" (click)="removeCard(card)" />
+<div *ngFor="let card of cards" (click)="setSelected(card)">
+    <div class="btns">
+        <app-btn id="content-isOpen" imgPath="./assets/svg/turn.svg" (click)="setIsOpen(card)" />
+        <app-btn id="content-close" imgPath="./assets/svg/close.svg" (click)="removeCard(card)" />
+    </div>
+    <img class="card-item" [ngClass]="{'selected': card.isSelected}" *ngIf="card.isOpen" [src]="card.path" />
+    <img class="card-item" [ngClass]="{'selected': card.isSelected}" *ngIf="!card.isOpen" [src]="card.backOfCard" />
 </div>
