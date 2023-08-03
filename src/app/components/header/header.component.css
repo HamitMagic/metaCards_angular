@@ -2,8 +2,6 @@ header {
     display: flex;
     justify-content: space-between;
     margin: 0 8px;
-    /* position: sticky;
-    top: 0; */
 }
 
 .header-right {

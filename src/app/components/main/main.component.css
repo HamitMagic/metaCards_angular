@@ -1,14 +1,15 @@
 :host {
     display: flex;
     flex-flow: column nowrap;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     /* height: 100%; */
+    flex: 1;
 }
 
 #content {
     /* border: 1px solid; */
-    flex: 1;
+    /* flex: 1; */
     display: flex;
-    gap: 8px;
+    gap: 16px;
     flex-flow: row wrap;
 }
