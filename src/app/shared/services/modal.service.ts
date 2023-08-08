@@ -10,8 +10,8 @@ export class ModalService {
 
     public toggleModalWindow() {
    		this.isModalOpen.next(!this.isModalOpen.value);
-  	}
-
+    }
+ 
     get modalStatus() {
         return this.isModalOpen;
     }
